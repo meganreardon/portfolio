@@ -11,13 +11,12 @@ h1 {
 
 .nav-icon {
   /* this will be the hamburger icon that shows as default for smaller screens */
-  background-color: #cccccc;
   width: 50px;
-  height: 50px;
   float: right;
+  border: none;
 }
 
-.nav {
+.nav-list ul {
   /* default nav designed for smaller screens */
   display: none; /* this will hide the nav, hamburger icon will take it's place */
   list-style: none;
@@ -25,18 +24,19 @@ h1 {
   padding: 4px;
 }
 
-.nav:hover {
+.nav-list:hover ul {
   display: block;
 }
 
 @media only screen and (min-width: 640px) {
-  .nav-larger-screens {
-    /* hide mobile nav hamburger icon, show wider nav */
-  }
   .nav-icon {
     display: none;
   }
-  .nav {
+  .nav-list ul {
+    display: flex;
+    justify-content: space-around;
+  }
+  .nav-list:hover ul {
     display: flex;
     justify-content: space-around;
   }
