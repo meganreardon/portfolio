@@ -1,5 +1,3 @@
-/* note: this is a desperately unfinished css page, please know that I'm aware of that */
-
 img {
   border: 1px darkgray solid;
   width: 100%;
@@ -40,4 +38,10 @@ h1 {
     display: flex;
     justify-content: space-around;
   }
+}
+
+/* social media nav */
+.nav-social img {
+  border: none;
+  width: 50px;
 }
