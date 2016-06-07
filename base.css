@@ -3,12 +3,45 @@ img {
   width: 100%;
 }
 
-.nav {
+h1 {
+  float: left;
+}
+
+.nav-icon {
+  /* this will be the hamburger icon that shows as default for smaller screens */
+  width: 50px;
+  float: right;
+  border: none;
+}
+
+.nav-list ul {
   /* default nav designed for smaller screens */
+  display: none; /* this will hide the nav, hamburger icon will take it's place */
+  list-style: none;
+  clear: both;
+  padding: 4px;
+}
+
+.nav-list:hover ul {
+  display: block;
 }
 
 @media only screen and (min-width: 640px) {
-  .nav {
-    /* hide mobile nav, show wider nav */
+  .nav-icon {
+    display: none;
   }
+  .nav-list ul {
+    display: flex;
+    justify-content: space-around;
+  }
+  .nav-list:hover ul {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
+/* social media nav */
+.nav-social img {
+  border: none;
+  width: 50px;
 }

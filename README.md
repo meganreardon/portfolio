@@ -8,4 +8,13 @@
   2. As a creator I would like to build a page that links to projects that display my newly acquired coding skills
   3. As a creator I would like to make my site look well thought out, well branded and appealing
   3. As a visitor I would like a cleanly designed, easy to navigate site that clearly communicates the past work of the subject
-  4. As a visitor I would like the site to be readable on any screen size I am using and I would like the site changes between screen sizes to be unnoticable
+  4. As a visitor I would like the site to be readable on any screen size I am using and I would like the site changes between screen sizes to be unnoticeable
+
+
+## Sources
+
+Social media icons, freely available:
+https://dribbble.com/shots/2089345-Nucleo-Free-Social-Icons
+
+Hamburger icon:
+wikimedia.org/wikipedia/commons/thumb/8/8d/VisualEditor_-_Icon_-_Menu.svg/2000px-VisualEditor_-_Icon_-_Menu.svg.png
