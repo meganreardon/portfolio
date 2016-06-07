@@ -1,1 +1,14 @@
-/* nothing to see here */
+img {
+  border: 1px darkgray solid;
+  width: 100%;
+}
+
+.nav {
+  /* default nav designed for smaller screens */
+}
+
+@media only screen and (min-width: 640px) {
+  .nav {
+    /* hide mobile nav, show wider nav */
+  }
+}
