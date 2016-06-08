@@ -13,12 +13,12 @@ function BlogPost (opts) {
 
 BlogPost.prototype.toHtml = function() {
   var $newBlogPost = $('article.blogpost-template').clone();
-  $newBlogPost.find('blogpost-header.h2').html(this.title); // title
-  $newBlogPost.find('blogpost-header.span').html(this.author); // author
-  $newBlogPost.find('blogpost-header.address').html(this.sourcetitle); // sourcetitle
-  $newBlogPost.find('blogpost-header.a').attr('href', this.sourceurl); // sourceurl
-  $newBlogPost.find('blogpost-header.time').html(this.published); // published
-  $newBlogPost.find('blogpost-content').html(this.content); // content
+  $newBlogPost.find('.blogpost-header h2').text(this.title); // title // this could be .text instead
+  $newBlogPost.find('.blogpost-header span').text(this.author); // author
+  $newBlogPost.find('.blogpost-header address').text(this.sourcetitle); // sourcetitle
+  $newBlogPost.find('.blogpost-header a').attr('href', this.sourceurl); // sourceurl
+  $newBlogPost.find('.blogpost-header time').text(this.published); // published
+  $newBlogPost.find('.blogpost-content').html(this.content); // content // this can be html because have p tags in the string
   $newBlogPost.removeClass('blogpost-template'); // remove class from template
   return $newBlogPost;
 };
