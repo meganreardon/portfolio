@@ -1,5 +1,7 @@
 // all my js belongs to here
 
+var blogposts = [];
+
 function BlogPost (opts) {
   this.title = opts.title;
   this.author = opts.author;
@@ -20,6 +22,24 @@ BlogPost.prototype.toHtml = function() {
   $newBlogPost.removeClass('blogpost-template'); // remove class from template
   return $newBlogPost;
 };
+
+blogpostData.forEach(function(ele){
+  blogposts.push(new BlogPost(ele));
+});
+
+blogposts.forEach(function(article){
+  $('#blogposts').append(article.toHtml()); // headdesk headdesk
+});
+
+// example code below
+// ourLocalData.forEach(function(ele){
+//   articles.push(new Article(ele));
+// });
+//
+// articles.forEach(function(article){
+//   $('#articles').append(article.toHtml());
+// });
+
 
 // // example below
 // Article.prototype.toHtml = function() {
