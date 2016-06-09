@@ -22,7 +22,9 @@
 
       <nav class="nav-list">
         <img src="images/hamburger_icon.png" class="nav-icon">
-        <ul>
+        <ul class="nav-social">
+          <li class="tab" data-content="blogposts"><a href="#"><img src="images/socialmedia/social-1_logo-rss.svg" /> Home</a></li>
+          <li class="tab" data-content="aboutthis"><a href="#"><img src="images/socialmedia/social-1_logo-buysellads.svg" /> About</a></li>
           <li class="nav-social"><a href="http://www.github.com"><img src="images/socialmedia/social-1_logo-github.svg" /> GitHub</a></li>
           <li class="nav-social"><a href="http://www.linkedin.com"><img src="images/socialmedia/social-1_logo-linkedin.svg" /> LinkedIn</a></li>
           <li class="nav-social"><a href="http://www.trello.com"><img src="images/socialmedia/social-1_logo-trello.svg" /> Trello</a></li>
@@ -31,7 +33,7 @@
         </ul>
       </nav>
 
-      <section id="blogposts">
+      <section id="blogposts" data-blogposts="posts" class="tab-content">
         <article class="blogpost-template">
           <header class="blogpost-header">
             <h2>Article Title</h2>
@@ -40,6 +42,13 @@
             </div>
           </header>
           <div class="blogpost-content"></div>
+        </article>
+      </section>
+
+      <section id="aboutthis" data-aboutthis="about" class="tab-content">
+        <article>
+          <h2>About All Of This</h2>
+          <p>This is the content that is about all of this. All of your this is belong to this.</p>
         </article>
       </section>
 
@@ -52,6 +61,7 @@
     <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
     <script src="scripts/blogpost-data.js" type="text/javascript"></script>
     <script src="scripts/blogpost.js" type="text/javascript"></script>
+    <script src="scripts/navigation.js" type="text/javascript"></script>
 
   </body>
 
