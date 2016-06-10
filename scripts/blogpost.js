@@ -10,15 +10,9 @@ function BlogPost (opts) {
 }
 
 BlogPost.prototype.toHtml = function() {
-  var $newBlogPost = $('article.blogpost-template').clone();
-  $newBlogPost.find('.blogpost-header h2').text(this.title); // title // this could be .text instead
-  $newBlogPost.find('.blogpost-header span').text(this.author); // author
-  $newBlogPost.find('.blogpost-header a').text(this.sourceTitle); // sourceTitle
-  $newBlogPost.find('.blogpost-header a').attr('href', this.sourceUrl); // sourceUrl
-  $newBlogPost.find('.blogpost-header time').text(this.published); // published
-  $newBlogPost.find('.blogpost-content').html(this.content); // content // this can be html because have p tags in the string
-  $newBlogPost.removeClass('blogpost-template'); // remove class from template
-  return $newBlogPost;
+  var ourPostScript = $('#blog-posts-area').html();
+  var ourPosts = Handlebars.compile(ourPostScript);
+  return ourPosts(this);
 };
 
 blogpostData.forEach(function(ele){
