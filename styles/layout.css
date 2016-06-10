@@ -1,8 +1,4 @@
 
-main {
-
-}
-
 h1 {
   float: left;
 }
@@ -12,8 +8,6 @@ h2 {
 }
 
 footer p {
-  /*width: 100%;
-  margin: 0px auto;*/
   display: flex;
   justify-content: center;
   margin-top: 50px;

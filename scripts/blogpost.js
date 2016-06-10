@@ -9,6 +9,7 @@ function BlogPost (opts) {
   this.content = opts.content;
 }
 
+// Handlebar code that replaces jQuery
 BlogPost.prototype.toHtml = function() {
   var ourPostScript = $('#blog-posts-area').html();
   var ourPosts = Handlebars.compile(ourPostScript);
