@@ -1,6 +1,9 @@
 body {
   color: #333333;
   background-color: #E65292;
+  font-size: 100%;
+  font-family: 'Abel', sans-serif;
+  font-size: 1.5em;
 }
 
 main {
@@ -8,16 +11,16 @@ main {
 }
 
 h1 {
-  /*float: left;*/
-  color: #666666;
+  color: #333333;
+  font-family: 'Chonburi', serif;
+  font-size: 2.5em;
 }
 
 h2 {
-
-}
-
-h3 {
-
+  font-family: 'Chonburi', serif;
+  font-size: 1.4em;
+  font-style: normal;
+  color: #333333;
 }
 
 img {
@@ -25,8 +28,9 @@ img {
   width: 100%;
 }
 
-p {
-
+article header {
+  font-style: italic;
+  color: #aaaaaa;
 }
 
 a:link {
@@ -42,4 +46,9 @@ a:visited {
 a:hover {
   color: #E65292;
   text-decoration: underline;
+}
+
+footer {
+  font-size: .7em;
+  color: #aaaaaa;
 }
