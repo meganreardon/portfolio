@@ -1,8 +1,45 @@
+body {
+  color: #333333;
+  background-color: #E65292;
+}
+
+main {
+  background-color: #ffffff;
+}
+
+h1 {
+  /*float: left;*/
+  color: #666666;
+}
+
+h2 {
+
+}
+
+h3 {
+
+}
+
 img {
   border: 1px darkgray solid;
   width: 100%;
 }
 
-h1 {
-  float: left;
+p {
+
+}
+
+a:link {
+  color: #1FA3AA;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #1FA3AA;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #E65292;
+  text-decoration: underline;
 }
