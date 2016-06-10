@@ -1,4 +1,15 @@
-/* social media nav */
+
+main {
+  
+}
+
+.page-container {
+  margin: 20px;
+  padding: 20px;
+  background-color: #ffffff;
+
+}
+
 .nav-social img {
   border: none;
   width: 50px;
