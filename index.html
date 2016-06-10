@@ -7,12 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="vendor/styles/normalize.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.3.1/css/simple-line-icons.css">
+    <link href='https://fonts.googleapis.com/css?family=Abel|Chonburi' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="styles/base.css" />
     <link rel="stylesheet" type="text/css" href="styles/layout.css" />
     <link rel="stylesheet" type="text/css" href="styles/module.css" />
 
     <!-- my handlebars script -->
-    <script id="blog-posts-area" type="text/x-handlebars-template">
+    <script id="blog-posts-area" type="text/x-handlebars-template" class="clearfix">
       <article>
         <header class="blogpost-header">
           <h2>{{title}}</h2>
@@ -30,8 +31,8 @@
 
     <div class="page-container">
 
-      <header>
-        <h1>Megan Reardon</h1>
+      <header class="clearfix">
+        <h1>Megan's Collected Recipes</h1>
       </header>
 
       <main>
@@ -50,16 +51,6 @@
         </nav>
 
         <section id="blogposts" data-blogposts="posts" class="tab-content">
-          <!-- original template code below, used for jQuery -->
-          <!-- <article class="blogpost-template">
-            <header class="blogpost-header">
-              <h2>Article Title</h2>
-              <div class="sources">
-                By <span>Author Name</span>, from <a>Blog Name</a>. Originally published <time>time</time>.
-              </div>
-            </header>
-            <div class="blogpost-content"></div>
-          </article> -->
         </section>
 
         <section id="aboutthis" data-aboutthis="about" class="tab-content">
@@ -72,7 +63,7 @@
       </main>
 
       <footer>
-        <p>&copy; Good Food Inc.</p>
+        <p>&copy; Yummy Food Inc.</p>
       </footer>
 
     </div> <!-- close .page-container -->

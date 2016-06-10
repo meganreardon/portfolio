@@ -1,13 +1,29 @@
 
 main {
-  
+
+}
+
+h1 {
+  float: left;
+}
+
+h2 {
+  margin-top: 50px;
+}
+
+footer p {
+  /*width: 100%;
+  margin: 0px auto;*/
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
 }
 
 .page-container {
   margin: 20px;
   padding: 20px;
   background-color: #ffffff;
-
+  border-radius: 10px;
 }
 
 .nav-social img {
@@ -17,4 +33,17 @@ main {
 
 .blogpost-template {
   display: none;
+}
+
+.clearfix::after {
+  /* this is code borrowed from the Lab example */
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.nav-list {
+  background-color: #cccccc;
+  border-radius: 10px;
+  padding: 2px 20px;
 }

@@ -20,5 +20,5 @@ blogpostData.forEach(function(ele){
 });
 
 blogposts.forEach(function(article){
-  $('#blogposts').append(article.toHtml()); // headdesk headdesk
+  $('#blogposts').append(article.toHtml());
 });
