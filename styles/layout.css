@@ -20,6 +20,14 @@ footer p {
   border-radius: 10px;
 }
 
+article img {
+  width: 50%;
+  float: right;
+  padding: 0px 0px 20px 20px;
+  border: none;
+  min-width: 360px;
+}
+
 .blogpost-template {
   display: none;
 }
