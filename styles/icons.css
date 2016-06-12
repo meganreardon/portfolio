@@ -12,6 +12,7 @@
 [class^="icon-"], [class*=" icon-"] {
     /* use !important to prevent issues with browser extensions that change fonts */
     font-family: 'icomoon' !important;
+    /* TODO: figure out how to set the text in the .nav-social li a to something other than 'normal' */
     speak: none;
     font-style: normal;
     font-weight: normal;
@@ -19,7 +20,7 @@
     text-transform: none;
     line-height: 1;
 
-    /* Better Font Rendering =========== */
+    /* Better Font Rendering */
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
