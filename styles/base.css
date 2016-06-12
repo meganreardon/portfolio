@@ -1,3 +1,7 @@
+/** {
+  border: 1px solid darkgray;
+}*/
+
 body {
   color: #333333;
   background-color: #E65292;
@@ -23,6 +27,10 @@ h2 {
   font-size: 1.4em;
   font-style: normal;
   color: #333333;
+}
+
+h3 {
+  font-weight: bold;
 }
 
 img {
@@ -53,4 +61,8 @@ a:hover {
 footer {
   font-size: .7em;
   color: #aaaaaa;
+}
+
+.recipeheaders {
+  font-weight: bold;
 }
