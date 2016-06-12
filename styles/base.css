@@ -14,6 +14,8 @@ h1 {
   color: #333333;
   font-family: 'Chonburi', serif;
   font-size: 2.5em;
+  width: 100%;
+  text-align: center;
 }
 
 h2 {
