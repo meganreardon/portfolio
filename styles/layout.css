@@ -40,7 +40,7 @@ article img {
 }
 
 .nav-list {
-  /*background-color: #cccccc;*/
+  /*background-color: #cccccc;*/ /* Want to add this back in in future. */
   border-radius: 10px;
   padding: 2px 20px;
 }
