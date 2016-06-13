@@ -4,7 +4,8 @@
 
 body {
   color: #333333;
-  background-color: #E65292;
+  /*background-color: #E65292; This is the pink background color. */
+  background-color: #1FA3AA;
   font-size: 100%;
   font-family: 'Abel', sans-serif;
   font-size: 1.5em;

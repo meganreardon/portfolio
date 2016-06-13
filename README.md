@@ -30,6 +30,9 @@ http://thearcticscoop.com/
 Pie photo:
 http://www.sunset.com/food-wine/kitchen-assistant/pie-recipes
 
+About Us party table photo:
+http://deliciouslydarlingevents.com/all-you-need-is-love-dessert-table/
+
 Chocolate Chip Cookies photo:
 http://www.bettycrocker.com/recipes/extraordinary-chocolate-chip-cookies/90fd6b2b-3d80-4755-8a85-538c40f9813d
 
