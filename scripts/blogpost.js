@@ -9,6 +9,8 @@ function BlogPost (opts) {
   this.content = opts.content;
 }
 
+BlogPost.allPosts = [];
+
 // Handlebar code that replaces jQuery
 BlogPost.prototype.toHtml = function() {
   var ourPostScript = $('#blog-posts-area').html();
@@ -16,10 +18,19 @@ BlogPost.prototype.toHtml = function() {
   return ourPosts(this);
 };
 
-blogpostData.forEach(function(ele){
-  blogposts.push(new BlogPost(ele));
-});
+// TODO: change this to a BlogPost function like in example
+// pushes each post into the blogposts array
+// blogpostData.forEach(function(ele){ // blogpostData is old and new name
+//   blogposts.push(new BlogPost(ele));
+// });
 
-blogposts.forEach(function(article){
-  $('#blogposts').append(article.toHtml());
-});
+BlogPost.loadAll = function(posts) {
+  posts.forEach(function (onePost) {
+    BlogPost.allPosts.push(new BlogPost(onePost));
+  });
+};
+
+// old function that loads blog posts to main page
+// blogposts.forEach(function(article){
+//   $('#blogposts').append(article.toHtml());
+// });
