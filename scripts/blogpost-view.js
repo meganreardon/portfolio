@@ -2,8 +2,8 @@ var blogpostView = {};
 
 blogpostView.setTeasers = function() {
   $('.blogpost-content .recipe-view').hide();
-  $('article').on('click', 'a.view-recipe', function(e) {
-    e.preventDefault();
+  $('article').on('click', 'a.view-recipe', function(event) {
+    event.preventDefault();
     if($(this).html() === 'View Recipe') {
       $(this).parent().find('.recipe-view').fadeIn();
       $(this).html('Hide Recipe');
@@ -18,8 +18,8 @@ blogpostView.setTeasers = function() {
 };
 
 blogpostView.renderIndexPage = function() {
-  BlogPost.all.forEach(function(p){
-    $('#blog-posts-area').append(p.toHtml('#article-template'));
+  BlogPost.allPosts.forEach(function(aSinglePost){
+    $('#blogposts').append(aSinglePost.toHtml('#blog-posts-area'));
   });
   blogpostView.setTeasers();
 };

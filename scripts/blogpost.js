@@ -12,8 +12,8 @@ function BlogPost (opts) {
 BlogPost.allPosts = [];
 
 // Handlebar code that replaces jQuery
-BlogPost.prototype.toHtml = function() {
-  var ourPostScript = $('#blog-posts-area').html();
+BlogPost.prototype.toHtml = function(nameOfTemplate) {
+  var ourPostScript = $(nameOfTemplate).html();
   var ourPosts = Handlebars.compile(ourPostScript);
   return ourPosts(this);
 };
@@ -39,6 +39,7 @@ BlogPost.fetchAll = function() {
     // Article.loadAll(//TODO: Invoke with our localStorage!);
     localCopy = JSON.parse(localStorage.getItem('allBlogpostDataLS'));
     BlogPost.loadAll(localCopy);
+    blogpostView.renderIndexPage();
     // TODO: Now let's render the index page.
     // articleView.renderIndexPage(); // PUT ME BACK IN
   } else {
@@ -55,6 +56,7 @@ BlogPost.fetchAll = function() {
       // localCopy = Article.loadAll(data);
       localStorage.setItem('allBlogpostDataLS', JSON.stringify(data));
       BlogPost.loadAll(data);
+      blogpostView.renderIndexPage();
       // articleView.renderIndexPage(); // PUT ME BACK IN
     });
   }
