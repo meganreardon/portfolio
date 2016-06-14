@@ -1,3 +1,5 @@
+// this is now old data, use .json file instead
+
 var blogpostData = [
   {
     title:        'Cupcakes',
