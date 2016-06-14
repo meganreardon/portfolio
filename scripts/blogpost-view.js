@@ -17,7 +17,11 @@ blogpostView.setTeasers = function() {
   });
 };
 
-
-$(document).ready(function() {
+blogpostView.renderIndexPage = function() {
+  BlogPost.all.forEach(function(p){
+    $('#blog-posts-area').append(p.toHtml('#article-template'));
+  });
   blogpostView.setTeasers();
-});
+};
+
+BlogPost.fetchAll();
