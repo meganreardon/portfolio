@@ -12,9 +12,10 @@ h2 {
 }
 
 footer p {
-  display: flex;
-  justify-content: center;
+  text-align: center;
   margin-top: 50px;
+  margin-left: 50px;
+  margin-right: 50px;
 }
 
 article img {
@@ -24,6 +25,7 @@ article img {
   border: none;
   min-width: 360px;
 }
+
 
 .page-container {
   margin: 40px 60px;
