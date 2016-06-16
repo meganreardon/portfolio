@@ -22,6 +22,7 @@ blogpostView.renderIndexPage = function() {
     $('#blogposts').append(aSinglePost.toHtml('#blog-posts-area'));
   });
   blogpostView.setTeasers();
+  $('#recipe-titles-length').text(allRecipeTitles()); // ingredients.js
 };
 
 BlogPost.fetchAll();
