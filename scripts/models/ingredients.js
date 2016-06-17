@@ -1,4 +1,3 @@
-(function(module) {
 
   var biggernumber = 0;
 
@@ -14,7 +13,3 @@
   // Note to self in future:
   // this function is called in line 25 of blogpost-view.js
   // it is rendered in the footer of index.html
-
-  module.BlogPost = BlogPost;
-
-})(window);

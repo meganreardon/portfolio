@@ -1,4 +1,4 @@
-(function(module) {
+
 
   var whatToView = {};
 
@@ -11,7 +11,3 @@
   };
 
   whatToView.handleMainNav();
-
-  module.BlogPost = BlogPost;
-
-})(window);

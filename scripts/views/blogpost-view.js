@@ -27,8 +27,8 @@
     $('#recipe-titles-length').text(allRecipeTitles()); // ingredients.js
   };
 
-  BlogPost.fetchAll();
-
-  module.BlogPost = BlogPost;
+  module.blogpostView = blogpostView;
 
 })(window);
+
+BlogPost.fetchAll();
