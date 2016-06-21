@@ -26,19 +26,21 @@
         <a href="#" class="view-recipe">View Recipe</a>
       </article>
     </script>
-    <script id="github-page-template" type="text/x-handlebars-template">
-      <h3><a href="{{html_url}}" target="_blank" class="repo-link">{{name}}</a></h3></li>
-        <p><span class="calledout">Description:</span> {{description}}</p>
-        <p><span class="calledout">Primary Language:</span> {{language}}</p> <!-- which programming language is most used in each project, from api -->
-        <p><span class="calledout">Created:</span> {{created_at}}</p>
-        <p><span class="calledout">Last Updated:</span> {{updated_at}}</p>
-        {{#if watchers_count}}
-           <p>{{watchers}} <span class="calledout">watching this repo</span></p>
-        {{/if}}
-        {{#if stargazers_count}}
-           <p><span class="calledout">Number of people stargazing this repo:</span> {{stargazers_count}}.</p>
-        {{/if}}
-      </script>
+      <script id="github-page-template" type="text/x-handlebars-template">
+           <li>
+             <h3><a href="{{html_url}}" target="_blank" class="repo-link">{{name}}</a></h3></li>
+             <p><span class="calledout">Description:</span> {{description}}</p>
+             <p><span class="calledout">Primary Language:</span> {{language}}</p> <!-- which programming language is most used in each project, from api -->
+             <p><span class="calledout">Created:</span> {{created_at}}</p>
+             <p><span class="calledout">Last Updated:</span> {{updated_at}}</p>
+             {{#if watchers_count}}
+               <p>{{watchers}} <span class="calledout">watching this repo</span></p>
+             {{/if}}
+             {{#if stargazers_count}}
+               <p><span class="calledout">Number of people stargazing this repo:</span> {{stargazers_count}}.</p>
+             {{/if}}
+           </li>
+         </script>
   </head>
 
   <body>
@@ -53,7 +55,7 @@
             <!-- new nav w/ ico moon icons -->
             <li class="tab" data-content="blogposts"><a href="/" class="icon-home3"> Home</a></li>
             <li class="tab" data-content="aboutthis"><a href="/about" class="icon-pencil"> About</a></li>
-            <li class="tab" data-content="github"><a href="/github" target="_blank" class="icon-github"> GitHub Projects</a></li>
+            <li class="tab" data-content="github"><a href="/github" class="icon-github"> GitHub Projects</a></li>
             <li><a href="http://www.linkedin.com" target="_blank" class="icon-linkedin"> LinkedIn</a></li>
             <li><a href="http://www.instagram.com" target="_blank" class="icon-instagram"> Instagram</a></li>
           </ul>
@@ -79,18 +81,23 @@
 
     </div> <!-- close .page-container -->
 
+    <script src="/githubToken.js" type="text/javascript"></script>
     <!-- vendor files -->
-    <script src="http://code.jquery.com/jquery-1.7.1.min.js" type="text/javascript"></script>
-    <script src="vendor/scripts/page.js" type="text/javascript"></script>
+    <script src="https://code.jquery.com/jquery-2.2.4.js"   integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
+    <!-- <script src="http://code.jquery.com/jquery-1.7.1.js" type="text/javascript"></script> -->
+    <script src="/vendor/scripts/page.js" type="text/javascript"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.js" type="text/javascript"></script>
     <!-- model files -->
-    <script src="scripts/models/blogpost.js" type="text/javascript"></script>
-    <script src="scripts/models/ingredients.js" type="text/javascript"></script>
+    <script src="/scripts/models/blogpost.js" type="text/javascript"></script>
+    <script src="/scripts/models/ingredients.js" type="text/javascript"></script>
+    <script src="/scripts/models/githubrepos.js" type="text/javascript"></script>
     <!-- view files -->
-    <script src="scripts/views/blogpost-view.js" type="text/javascript"></script>
+    <script src="/scripts/views/blogpost-view.js" type="text/javascript"></script>
+    <script src="/scripts/views/githubrepos-view.js" type="text/javascript"></script>
     <!-- controller files -->
     <script src="/scripts/controllers/blogpost-controller.js"></script>
     <script src="/scripts/controllers/about-controller.js"></script>
+    <script src="/scripts/controllers/github-controller.js"></script>
     <script src="/scripts/controllers/paths.js"></script>
   </body>
 

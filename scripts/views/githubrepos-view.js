@@ -8,13 +8,15 @@
   };
 
   githubreposView.renderRepos = function() {
+    console.log(repos.withTheAttribute('name')
+    .map(reposCompiler));
     $('#githubinfo ul').empty().append(
       repos.withTheAttribute('name')
       .map(reposCompiler)
     );
   };
 
-  repos.requestRepos(repoView.renderRepos);
+  repos.requestRepos(githubreposView.renderRepos);
 
   module.githubreposView = githubreposView;
 
