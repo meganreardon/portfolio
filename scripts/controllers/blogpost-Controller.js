@@ -8,3 +8,5 @@
 
   module.blogpostController = blogpostController;
 })(window);
+
+// comment for purpose of testing renaming a file
