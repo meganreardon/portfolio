@@ -26,7 +26,19 @@
         <a href="#" class="view-recipe">View Recipe</a>
       </article>
     </script>
-
+    <script id="about-page-template" type="text/x-handlebars-template">
+      <h3><a href="{{html_url}}" target="_blank" class="repo-link">{{name}}</a></h3></li>
+        <p><span class="calledout">Description:</span> {{description}}</p>
+        <p><span class="calledout">Primary Language:</span> {{language}}</p> <!-- which programming language is most used in each project, from api -->
+        <p><span class="calledout">Created:</span> {{created_at}}</p>
+        <p><span class="calledout">Last Updated:</span> {{updated_at}}</p>
+        {{#if watchers_count}}
+           <p>{{watchers}} <span class="calledout">watching this repo</span></p>
+        {{/if}}
+        {{#if stargazers_count}}
+           <p><span class="calledout">Number of people stargazing this repo:</span> {{stargazers_count}}.</p>
+        {{/if}}
+      </script>
   </head>
 
   <body>
