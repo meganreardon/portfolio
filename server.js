@@ -5,7 +5,7 @@ app.use(express.static('./'));
 
 app.get('*', function(request, response) {
   console.log('New request', request.url);
-  response.SendFile('index.html', {root: '.'});
+  response.sendFile('index.html', {root: '.'});
 });
 
 app.listen(port, function() {
