@@ -8,8 +8,6 @@
   };
 
   githubreposView.renderRepos = function() {
-    console.log(repos.withTheAttribute('name')
-    .map(reposCompiler));
     $('#githubinfo ul').empty().append(
       repos.withTheAttribute('name')
       .map(reposCompiler)
